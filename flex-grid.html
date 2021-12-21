@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .par {
+        /* margin: auto;
+        to moving  the into the center of page */
+        display: grid;
+        grid-template:
+          "a1 a2 a3"
+          "a1 a4 a3";
+        width: 50vw;
+        height: 50vh;
+        column-gap: 10px;
+        row-gap: 5px;
+        /* position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0; */
+      }
+      body {
+        margin: 0;
+      }
+      .s1:nth-child(1) {
+        border: solid 3px orange;
+        grid-area: a1;
+      }
+      .s1:nth-child(2) {
+        border: solid 3px orange;
+        grid-area: a2;
+      }
+      .s1:nth-child(3) {
+        border: solid 3px orange;
+        grid-area: a3;
+      }
+      .s1:nth-child(4) {
+        border: solid 3px orange;
+        grid-area: a4;
+        ps
+      }
+      .grandp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* the grandparent aslo take the height etc to display the parent element */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grandp">
+      <div class="par">
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+        <div class="s1"></div>
+      </div>
+    </div>
+  </body>
+</html>
