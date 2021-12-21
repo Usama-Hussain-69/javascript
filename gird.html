@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: grid;
+        grid-template:
+          "a1 a1 a1"
+          "a2 a3 a4"
+          "a5 a6 a6";
+        height: 100vh;
+        width: 100vw;
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+      body {
+        margin: 0;
+      }
+      .gri:nth-child(1) {
+        grid-area: a1;
+        background-color: aquamarine;
+      }
+      .gri:nth-child(2) {
+        grid-area: a2;
+        background: rgb(48, 3, 3);
+      }
+      .gri:nth-child(3) {
+        grid-area: a3;
+        background: rgb(160, 38, 38);
+      }
+      .gri:nth-child(4) {
+        grid-area: a4;
+        background: rgb(139, 112, 112);
+      }
+      .gri:nth-child(5) {
+        grid-area: a5;
+        background: rgb(60, 204, 96);
+      }
+      .gri:nth-child(6) {
+        grid-area: a6;
+        background: rgb(73, 70, 70);
+      }
+      .gri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="gri"><div class="s2">A</div></div>
+      <div class="gri"><div class="s2">B</div></div>
+      <div class="gri"><div class="s2">C</div></div>
+      <div class="gri"><div class="s2">D</div></div>
+      <div class="gri"><div class="s2">E</div></div>
+      <div class="gri"><div class="s2">F</div></div>
+    </div>
+  </body>
+</html>
