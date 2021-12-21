@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .airplane {
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation: funtime 5s linear 0s;
+      }
+
+      @keyframes funtime {
+        0% {
+          bottom: 0;
+          right: 0;
+        }
+        50% {
+          right: 70%;
+          bottom: 70%;
+          transform: rotate(30deg);
+        }
+
+        /* 70% {
+          right: 70%;
+          bottom: 0%;
+          transform: scale(-1,1);
+        } */
+        100% {
+          transform: scale(-1, 1);
+          right: 98%;
+          bottom: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img class="airplane" src="air1.jpg" alt="" />
+  </body>
+</html>
