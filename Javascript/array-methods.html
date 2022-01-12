@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let allle = ["B", "F", "X", "x", "apple", "A", "its a string"];
+      let allstr = ["boll", "dog", "flex", "zoo", "people", "apple", "good"];
+      let num = [34, 45, 57, 67, 78, 89, 1, 2, 3, 4, 5, 6, 100];
+
+      // sort method its used the sort the arry the in alphabetically like a,b,c
+      // sort method does not sort the numbers
+      //   let so = allle.sort();
+      //   console.table(so);
+      //   let str = allstr.sort();
+      //   console.table(str);
+
+      // reverse method of method of array
+      //   let re = allle.reverse();
+      //   console.table(re);
+      //   // in reverse method in number its will reverse the order of array
+      //   let nm = num.reverse();
+      //   console.table(nm);
+
+      // pop method in array // delect or remove from the last of array
+      //   let po = allle.pop();
+      //   console.log(po);
+
+      //push method in array // adding values at last of array and multiples values is supported at once by using comma
+
+      // console.table(allle);
+      // allle.push("usama", 123);
+      // console.table(allle);
+
+      //shift () delect value at first index of array
+      //arrayname.shift()
+      // let shi = allle.shift();
+      // console.log(shi);
+
+      //unshift method add vlaue at first index of array
+      //arrayname.unshift(value),
+      // allle.unshift("valuesere",123,"usama");
+      // console.table(allle);
+
+      //concat method
+      // that add value at the last of array and that value also become the array
+      // let b = allle.concat("its me", 14);
+      // console.log(b);
+      // let c = allle.concat(allstr, num);
+      // console.table(c);
+
+      // join method (join method combine all data of indexs and join it as a single value )
+      // in that case join each index of array by placing comman b/w them
+
+      // let joi = allle.join(",");
+      // console.log(joi);
+
+      //slice method is used to create the copy of array with data with out changing the exiting array
+      //slice(starting copy index,ending copy index);
+      //slice(0) its means that copy all vlues of array 0r start form it upto end
+      //slice(-ve) copying starting form back of array   ??????
+
+      // let sli = allle.slice(2, 6);
+      // console.log(sli);
+      // sli = allle.slice(0);
+      // console.log(sli);
+      // let sli = allle.slice(-1);
+      // console.log(sli);
+
+      //splice method is used to add and delect values in the array
+      //arrayname.splice("form that index","how many value to be delect","new values to be added");
+      //splice(2,0,10) means that at index 2 add 10 and no any value will be delect
+      //splice(2,2,10) means that at index 2 add 10 and delect next two value form index two
+      // also add multiples values
+
+      // let spli = allle.splice(0, 2);
+      // // he delect two value form index 0 and 1
+      // console.log(spli);
+      // console.log(allle);
+      // spli = allle.splice(0, 0, "yar again its me");
+      // // now that will override the value of 0 index
+      // console.table(allle);
+      // spli = allle.splice(0, 2, " its me usama", "hussain");
+      // // its will delect two value and add one value (with value of " its me usama")
+      // console.table(allle);
+
+      // // isArray method
+      // // The isArray() method returns true if an object is an array, otherwise false
+      // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      // let result = Array.isArray(fruits);
+      // console.log(result); // ture
+      // let text = "W3Schools";
+      // let tex = Array.isArray(text);
+      // console.log(tex); // false
+
+      //indexOf() is used to search for your required data (value ) Is present in the array if present than what is its index in the array
+      //The indexOf( ) method returns -1 if the value is not found.
+      // we can also give the start searching values in array
+      //array.indexOf(item, start)
+      //searches from left to right.
+      // let dil = allle.indexOf("apple");
+      //
+      // console.log(dil);
+
+      // lastindexof() is used to search for your required data (value ) Is present in the array if present than what is its index in the array
+      //The indexOf() method returns -1 if the value is not found.
+      //array.lastIndexOf(item, start)
+      //we can also give the start searching values in array
+      //searches from right to left
+      // let dil = allle.lastIndexOf("A",-1);
+      // console.log(dil);
+
+      //include method
+      //The includes() method returns true if an array contains a specified value.
+      //The includes() method returns false if the value is not found.
+      //The includes() method is case sensitive
+      // let pak = allle.includes("pakistan");
+      // console.log(pak);
+
+      // some method
+      // one by one values is going inside the function
+      // its works like a OR GATE if one of them is ture than result is ture
+      // it will only give the result in thr form of ture or false
+      // const ages = [3, 10, 8, 2];
+      // let ax = ages.some(checkAdult);
+      // console.log(ax);
+      // function checkAdult(age) {
+      //   return age > 18;
+      // }
+
+      //every method
+      //The every() method executes a function for each array element.
+      //The every() method returns true if the function returns true for all elements.
+      //the every() method returns false if the function returns false for one element.
+      //The every() method does not execute the function for empty elements.
+      //The every() method does not change the original array
+      //array.every(function(currentValue, index, arr), thisValue)
+      // its works like a AND GATE if one of them is False than result is false
+      // it will only give the result in thr form of ture or false
+      // const ages = [32, 33, 14, 40];
+      // let re = ages.every(checkAge);
+      // console.log(re);
+      // function checkAge(age) {
+      //   return age > 18;
+      // }
+    </script>
+  </body>
+</html>

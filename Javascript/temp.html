@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="shower">
+      <span class="batti"></span>
+    </h1>
+    <script>
+      let simple = [
+        "A",
+        "Apple",
+        "B",
+        "Ball",
+        " C",
+        "Cat",
+        "D",
+        "Doll",
+        "E",
+        "Egg",
+        "F",
+        "Frog",
+        "G",
+        "Glass",
+        "H",
+        "Hat",
+        "I",
+        "Igloo",
+        "J",
+        "Jam",
+        "K",
+        "Kite",
+        "L",
+        "Lamb",
+        "M",
+        "Man",
+        "N",
+        "Net",
+        "O",
+        "Onion",
+        "P",
+        "Pen",
+        "Q",
+        "Queen",
+        "R",
+        "Ring",
+        "S",
+        "Star",
+        "T",
+        "Train",
+        "U",
+        "Umbrella",
+        "V",
+        "Van",
+        "W",
+        "Watch",
+        "X",
+        "Xylophone",
+        "Y",
+        "Yacht",
+        "Z",
+        "Zebra",
+      ];
+      let count = 0;
+      setInterval(function () {
+        let re = Math.round(Math.random() * 255);
+        let gr = Math.round(Math.random() * 255);
+        let bl = Math.round(Math.random() * 255);
+        let color = "rgb(" + re + "," + gr + "," + bl + ")";
+        let spanCode =
+          "<span class='batti' style='color:" +
+          color +
+          "'' >" +
+          simple[count] +
+          " </span>";
+        shower.innerHTML += spanCode;
+        count++;
+        // shower.innerHTML += simple[count];
+        if (count == 52) {
+          count = 0;
+        }
+      }, 100);
+    </script>
+  </body>
+</html>

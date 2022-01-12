@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let createary = (data) => {
+        let str = data;
+        let len = str.length;
+        if (str.length == 1) {
+          let i = parseInt(str);
+          console.log(i);
+        } else {
+          createary(str);
+        }
+
+        for (var i = 0; i < ary.length; i++) {
+          if (ary[i] === 5) {
+            ary.splice(i, 1);
+          }
+        }
+        let ary = [];
+        for (let index = 0; index < len; index++) {
+          ary.push(parseInt(str.charAt(index)));
+        }
+
+        function again(ary) {
+        //   let ary = ary;
+          let total = 0;
+          ary.forEach((val, indx) => {
+            total += val;
+          });
+          let ax = toString(total);
+          str = ax;
+        }
+      };
+      let str = prompt("enter your number : ");
+      createary(str);
+
+      //   let str = "232323914788686";
+      //   let len = str.length;
+      //   let ary = [];
+      //   for (let index = 0; index < len; index++) {
+      //     ary.push(parseInt(str.charAt(index)));
+      //   }
+      //   console.table(ary);
+
+      //   let temp = [1, 2, 3, 4, 5, 6, 7, 2324, 35, 4, 54, 65, 6, 557, 6];
+      //   let total = 0;
+      //   temp.forEach((val, indx) => {
+      //     total += val;
+      //   });
+
+      //   console.log(total);
+
+      //   var number = 12359987,
+      //     output = [],
+      //     sNumber = number.toString();
+
+      // let temp = parseInt(str.charAtindex);
+      // ary.push(temp);
+
+      // let al = str.charAt(index);
+      // let n = parseInt(str.charAt(index));
+
+      //   for (var i = 0, len = sNumber.length; i < len; i += 1) {
+      //     output.push(+sNumber.charAt(i));
+    </script>
+  </body>
+</html>

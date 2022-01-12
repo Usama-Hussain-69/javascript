@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let me = {
+        fName: "Usama",
+        lName: "Hussain",
+        fullName: () => {
+          return me.fName + me.lName;
+        },
+        ary: [
+          {
+            abd: {
+              name: "hvsdgh",
+            },
+          },
+          {
+            name: "second obect inside the array",
+          },
+        ],
+
+        neso: {
+          new: "nested object",
+          ax: {
+            name: "its me ",
+          },
+        },
+      };
+      console.log(me.neso.ax["name"]);
+
+      console.log(me["ary"]);
+      console.log(me.ary[0].abd.name);
+
+      console.log(me.fullName());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <div>
+        <input id="userName" type="text" />
+      </div>
+
+      <div>
+        <input id="password" type="text" />
+      </div>
+
+      <div>
+        <input id="userEmail" type="text" />
+      </div>
+
+      <button onclick="saveUser(event)">Save user</button>
+    </form>
+    <table>
+      <tr>
+        <thead>
+          <th style="padding-right: 30px">#</th>
+          <th style="padding-right: 30px">User Name</th>
+          <th style="padding-right: 30px">User Password</th>
+          <th style="padding-right: 30px">User Email</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </tr>
+    </table>
+
+    <script>
+      let users = [];
+
+      function saveUser(event) {
+        event.preventDefault();
+
+        for (let user of users) {
+          if (user.email == userEmail.value) {
+            return alert("user pehley se h");
+          }
+        }
+
+        let user = {
+          name: userName.value,
+          password: password.value,
+          email: userEmail.value,
+        };
+        tbody.innerHTML += ` <tr>
+            <td>001</td>
+            <td>${user.name}</td>
+            <td>${user.password}</td>
+            <td>${user.email}</td>
+          </tr>`;
+        
+        some.innerHTML += "<td>" + user.name + "</td>";
+        some.innerHTML += "<td>" + user.password + "</td>";
+        some.innerHTML += "<td>" + user.email + "</td>";
+        document.createElement('tr');
+        myForm.reset();
+
+        users.push(user);
+
+        // users.forEach((element) => {
+        //   some.innerHTML +=
+        //     "<div>" + user.name + user.password + user.email + "</div>";
+        //   // console.log(element);
+        // });
+        // console.log(users);
+
+        // console.log(element);
+      }
+
+      // new object
+      // let name = "UseName",
+      //   password = "Password";
+      // let myObj = {
+      //   name,
+      //   password,
+      // };
+      //   // key=value ==same es6
+      // console.log("experiment", myObj);
+
+      // us.innerHTML = +user.name;
+
+      // pa.innerText = +user.password;
+      // em.innerText = +user.email;
+
+      //  ()=>{}
+      //  ()=> return
+      //  element => result
+
+      // [1, 2, 3, 4, 5, 6].forEach((jamala, indx, ar) => {
+      //   console.log("element", jamala);
+      //   console.log("index", indx);
+      //   console.log("array", ar);
+      // });
+
+      //   let spanCode =
+      //       "<span class='batti' style='color:" +
+      //       color +
+      //       "'' >" +
+      //       simple[count] +
+      //       " </span>";
+      //     shower.innerHTML += spanCode;
+    </script>
+  </body>
+</html>

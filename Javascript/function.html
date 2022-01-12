@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // new example
+      function fun1() {
+        document.write("first function ");
+      }
+
+      // new example
+
+      fun1();
+
+      function sum(a, b, c) {
+        d = a + b + c;
+        return d;
+      }
+
+      document.write("<br>" + sum(1, 12, 12));
+
+      // new example
+
+      function sum1(g, f, e) {
+        // let g;
+        var f;
+        // const e;
+        var t;
+        t = g + f + e;
+        return t;
+      }
+
+      document.write("<br>" + sum1(1, 12, 23));
+
+      // new example
+
+      function abc1(a, b, d) {
+        f = a * b ** d;
+        return f;
+      }
+      var p1 = 12;
+      var p2 = 13;
+      var p3 = 14;
+
+      document.write("<br>" + abc1(p1, p2, p3));
+
+      // new example function with default values for (if any value is miss than it will take default value)
+
+      function defa1(
+        v1 = "First Name is  missing ",
+        v2 = " second default value is missing",
+        v3 = "its a thrid missing"
+      ) {
+        var total = v1 + v2 + v3;
+        return total;
+      }
+
+      v12 = "fisrt value by user";
+      v21 = "second value by user";
+      v33 = "third value by user";
+
+      document.write("    <br>                     " + defa1(v12));
+    </script>
+  </body>
+</html>

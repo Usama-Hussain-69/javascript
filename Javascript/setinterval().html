@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 id="tag"></h1>
+    <h1 id="eg"></h1> -->
+    <h1 id="meraTag">
+      <span class="batti"></span>
+    </h1>
+
+    <script>
+      // next example
+
+      // let count=1;
+      //     let ab=setInterval(function () {
+      //         console.log("its me")
+      //         count++;
+      //         if(count==10){
+      //             clearInterval(ab);
+      //             console.log("its ended")
+      //         }
+      //     },1000)
+
+      // next example
+
+      //   let count = 1;
+      //   let de = setInterval(function () {
+      //     console.log("some thing counted");
+      //     count++;
+
+      //     if (count == 8) {
+      //       clearInterval(de);
+      //       console.log("its me");
+      //     }
+      //   }, 1000);
+
+      // settimeout()
+      // the code at once time
+      // to stop that once exection of code we used return key that is provided by settimeout function(in this prgram that is star)
+      // that code will run after a 5 second
+      //   let star = setTimeout(function () {
+      //     console.log("that is set time out");
+      //   }, 5000);
+
+      // new example of comedown
+
+      //   let count = 10;
+      //   let fun = setInterval(function () {
+      //     console.log("its me");
+      //     count--;
+      //     if (count == -1) {
+      //       console.log("time up sir ");
+      //       clearInterval(fun);
+      //     }
+      //   }, 1000);
+
+      // new example
+
+      // let count = 10;
+      //   let fun = setInterval(function () {
+      //     console.log(count);
+      //     tag.innerText=count;
+      //     count--;
+      //     if (count == -1) {
+      //       console.log("time up sir ");
+      //       clearInterval(fun);
+      //     }
+      //   }, 1000);
+
+      // new example
+
+      //   let count = 65;
+
+      //   let ex = setInterval(function () {
+      //     eg.innerText = String.fromCharCode(count);
+      //     count++;
+      //     if (count == 91) {
+      //       clearInterval(ex);
+      //     }
+      //   }, 300);
+
+      //new example
+
+      let count = 64;
+
+      let meriKey = setInterval(function () {
+        let redColor = Math.round(Math.random() * 255);
+        let greenColor = Math.round(Math.random() * 255);
+        let blueColor = Math.round(Math.random() * 255);
+
+        //    "rgb(100,122,22)"
+        // "rgb(" +redColor + "," + greenColor +"," + blueColor +")"
+
+        let color =
+          "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
+
+        let spanCode =
+          "<span class='batti' style='background-color:" +
+          color +
+          "'' ></span>";
+
+        meraTag.innerHTML += spanCode;
+        count++;
+        meraTag.innerHTML += String.fromCharCode(count);
+
+        if (count == 91) {
+          meraTag.innerHTML = "";
+          count = 64;
+          //   clearInterval(meriKey);
+        }
+      }, 100);
+    </script>
+  </body>
+</html>

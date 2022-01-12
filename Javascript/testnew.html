@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createary(str) {
+        let len = str.length;
+        let total = 0;
+        if (len == 1) {
+          // console.log(total);
+        } else {
+          again(str);
+        }
+
+        function again(str) {
+          let len = str.length;
+        
+
+          let ary = [];
+          for (let index = 0; index < str.length; index++) {
+            ary.push(parseInt(str.charAt(index)));
+          }
+
+          ary.forEach((val, indx) => {
+            total += val;
+          });
+
+          ary.forEach((val, ins) => {
+            ary.splice(ins, 1);
+          });
+
+          let newst = total.toString();
+          console.log(newst);
+          // return newst;
+          str = newst;
+        }
+        createary();
+      }
+
+      //   function again(ary) {
+      //     console.log(ary);
+      //   }
+
+      let str = prompt("enter your number : ");
+
+      createary(str);
+    </script>
+  </body>
+</html>
